@@ -1,7 +1,8 @@
 // Circuit Playground Bike Glove - Right Turn Animation
-// 
+//
+// Adapted by: Julian Kosanovic
 // Original author: Carter Nelson
-// MIT License (https://opensource.org/lincenses/MIT)
+//
 
 #include <Adafruit_CircuitPlayground.h>
 

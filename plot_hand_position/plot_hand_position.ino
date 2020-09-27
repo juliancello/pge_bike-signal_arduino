@@ -1,3 +1,9 @@
+// Circuit Playground Bike Glove - Plot Hand Position
+//
+// Adapted by: Julian Kosanovic
+// Original author: Carter Nelson
+//
+
 #include <Adafruit_CircuitPlayground.h>
 // xyz = brg
 // drop rest 1: -7.5, -4, 5

@@ -1,7 +1,8 @@
 // Circuit Playground Bike Glove - Hand Position Detection
-// 
+//
+// Adapted by: Julian Kosanovic
 // Original author: Carter Nelson
-// MIT License (https://opensource.org/lincenses/MIT)
+//
 
 #include <Adafruit_CircuitPlayground.h>
 // Resting hand is X, Y = 0, Z = 9
