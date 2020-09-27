@@ -7,8 +7,7 @@
 // Resting hand is X, Y = 0, Z = 9
 // Left turn is X = 9, Y, Z = 0
 // Right turn is X = 0, Y = 9, Z = 0
-#define THRESHOLD 5
-//threshold for both turns and resting position
+#define THRESHOLD 5 //threshold for both turns and resting position
 
 void setup() {
   Serial.begin(9600);

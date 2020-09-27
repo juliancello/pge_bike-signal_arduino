@@ -1,5 +1,9 @@
 #include <Adafruit_CircuitPlayground.h>
-
+// xyz = brg
+// drop rest 1: -7.5, -4, 5
+// drop rest 2: -3, -2, 9
+// left turn 1: -9, 0, 0
+// left turn 2: -6, 6, 0
 float X, Y, Z;
 
 void setup() {

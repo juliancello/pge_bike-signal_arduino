@@ -8,13 +8,15 @@
 #define BRIGHTNESS      255
 #define TURN_COLOR      0xFF7E00
 #define TURN_OFF        0x000000
-#define ANIM_DELAY      200
-#define THRESHOLD       5
+#define ANIM_DELAY      100
+#define THRESHOLD       -5
+#define REST_THRESHOLD  5
 // threshold for both turns and resting position
 // TURN_COLOR is SAE/ECE Amber
 // arrays are zero indexed
 // lights chase and remain on, then chase off
-const int right_order[] = {2, 3, 1, 4, 0, 5, 9, 6, 8, 7}; // start to end window = 1, 2, 2, 2, 2, 1
+
+const int right_order[] = {7, 8, 6, 9, 5, 0, 4, 3, 1, 2}; // start to end window = 1, 2, 2, 2, 2, 1
 const int left_order[] = {0, 9, 1, 8, 2, 7, 3, 6, 4, 5}; // s.t.e.w. = 5 2s
 
 void rightTurnAnimation() {
@@ -72,15 +74,15 @@ void loop() {
   // check slide switch position
   if (CircuitPlayground.slideSwitch()) {
     // check for hand up or down 
-    if (CircuitPlayground.motionZ() > THRESHOLD) {
+    if (CircuitPlayground.motionZ() > REST_THRESHOLD) {
       // do nothing
     } else {
     
       // check for right turn
-      if (CircuitPlayground.motionY() > THRESHOLD) {
+      if (CircuitPlayground.motionY() < THRESHOLD) {
         rightTurnAnimation();
       // check for left turn
-      } else if (CircuitPlayground.motionX() > THRESHOLD) {
+      } else if (CircuitPlayground.motionX() < THRESHOLD) {
         leftTurnAnimation();
       }
     }
