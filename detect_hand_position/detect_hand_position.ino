@@ -8,6 +8,12 @@
 // Resting hand is X, Y = 0, Z = 9
 // Left turn is X = 9, Y, Z = 0
 // Right turn is X = 0, Y = 9, Z = 0
+// xyz = brg
+// drop rest 1: -7.5, -4, 5
+// drop rest 2: -3, -2, 9
+// left turn 1: -9, 0, 0
+// left turn 2: -6, 6, 0
+// test tolerance +/- 2
 #define THRESHOLD 5 //threshold for both turns and resting position
 
 void setup() {

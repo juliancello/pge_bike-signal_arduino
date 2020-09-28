@@ -10,6 +10,7 @@
 // drop rest 2: -3, -2, 9
 // left turn 1: -9, 0, 0
 // left turn 2: -6, 6, 0
+// test tolerance +/- 2
 float X, Y, Z;
 
 void setup() {
